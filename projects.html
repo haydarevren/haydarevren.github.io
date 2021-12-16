@@ -1,0 +1,243 @@
+<!Doctype HTML>
+<!--
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+
+<head>
+	<title>Haydar Evren - Projects</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<header id="header">
+			<div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Return Home</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Projects</h1>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#cheers">Cheers</a></li>
+					<li><a href="#stock">Stock Analysis<br>Web App</a></li>
+					<li><a href="#senior">Senior<br>Project</a></li>
+					<li><a href="#DID">Econometrics<br>Project</a></li>
+					<li><a href="#phd">PhD<br>Thesis</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main">
+
+			<!-- Cheers -->
+			<article id="cheers">
+				<h2 class="major">Cheers</h2>
+				<h4>NLP based recommender system using Scikit-Learn, Tensorflow, and Flask in a fully deployed web app
+				</h4>
+
+				<p>For more technical details, see
+					my <a href="https://github.com/haydarevren/Cheers">github
+						repo</a> and the demo below shows the main functionalities. You can view my completed app <a
+						href="https://cheers-capstone.herokuapp.com/"> here</a>.
+					<hr>
+				<p>
+
+				<p>An interactive web app that allows users to type the flavors/characteristics they find appealing and
+					shows five recommended beers and the user's taste profile.</p>
+
+				<span><img src="images/cheers_animation.gif" alt="StockApp" width="100%" /></span>
+
+				<p>I scraped thousands of consumer reviews and manufacture descriptions of their beers. These reviews
+					and descriptions are highly informative as they contain words that provide information the
+					characteristics of that beer.
+
+					Then I used Natural Language Processing (NLP) to uncover relationships between these descriptive
+					sentences and beers.
+
+					When the user inputs their own search terms, first algorithm transforms unstructured text data to
+					high dimensional vectors. With sentence embedding I can capture the context of the whole sentence in
+					a vector.
+
+					It allows us to understand the intention of the sentence.
+
+					Once the search terms vectorized, the algorithm classifies these vectors.
+				</p>
+
+				<span><img src="images/cheers_model.png" alt="StockApp" width="100%" /></span>
+				<p>I tried a variety of models for classification task (with and without tranfer learning). You can see
+					the performance of them below. Top-5 accuracy means any of our model's top 5 highest probability
+					answers match with the expected answer.
+					Top-5 accuracy means any of our model's top 5 highest probability answers match with the expected
+					answer.</p>
+
+
+
+				<span><img src="images/cheers_results.png" alt="StockApp" width="100%" /></span>
+
+
+
+			</article>
+
+			<!-- Stock Analysis App -->
+			<article id="stock">
+				<h2 class="major">Stock Analysis App</h2>
+				<h4>Retrieves data from Alpha Vantage and presents the financial analysis using Pandas, Bokeh and Flask
+				</h4>
+
+				<p>For more details, see <a href="https://github.com/haydarevren/stock-analysis-flask"> github rep</a>.
+					The demo below shows the main functionalities. You can view my completed app <a
+						href="https://hevren-stock-analysis.herokuapp.com/"> here</a>. </p>
+
+				<span><img src="images/stockanalysis_animation.gif" alt="StockApp" width="100%" /></span>
+
+				<p>Price plots: Opening, Highest, Lowest, Adjusted closing</p>
+
+				<p>Analysis plots: Candlestick Chart, Daily Returns, Monthly Returns, Yearly Returns, Annualized
+					Volatility, Daily 12-1 Price Momentum Signal</p>
+			</article>
+
+			<!-- Senior Project -->
+			<article id="senior">
+				<h2 class="major">Senior Project</h2>
+				<h4>Clustering and Synchronizing of Audio Sequences</h4>
+				<p>For more details on the scientific content of the project,
+					see my <a href="https://github.com/haydarevren/Synchronize-Audio">github page</a>.</p>
+
+
+
+				<p>For my senior project, I developed an application that synchronizes heavily corrupted multi-audio
+					recordings within a few seconds of the core search time using a landmark-based audio fingerprinting
+					method in MATLAB.
+
+				</p>
+
+				<span><img src="images/spectrogram_peaks.png" alt="Biases" width="100%" /></span>
+
+
+
+				<p>By using FFT over small windows of time in the audio samples, we can create a spectrogram of the
+					audio sample. After that , we can find the peaks in amplitude. You can think it as a fingerprint for
+					the audio sample. </p>
+			</article>
+
+			<!-- Econometrics Project -->
+			<article id="DID">
+				<h2 class="major">Econometrics Project</h2>
+				<h4>Schooling Aid vs College Attendance</h4>
+				<p>For more details on the scientific content of the project,
+					see my <a href="/files/DID Research Paper.pdf">paper</a>.</p>
+
+
+
+				<p> For the final project of BC's Graduate Level Applied Econometrics course ECON 8823, I examined the
+					effect of schooling aid on college attendance. I utilized DID estimator fo the identification. It is
+					a useful technique in impact valuation when randomization on the individual level is
+					not possible.
+				</p>
+
+				<span><img src="images/DIDgraph.png" alt="DID" width="100%" /></span>
+
+
+				<ul>
+					<li>The research question is whether schooling aid increases college attendance or it just
+						financially
+						supports students who would have gone to college regardless of aid.</li>
+					<li>Examining the effect of schooling aid on college attendance is challenging because treated and
+						untreated students can differ in unobservable characteristics correlated with potential
+						outcomes,
+						even controlling for differences in observed characteristics.</li>
+					<li>However, we can use a difference-in-differences estimator for identification strategy.
+						The Social Security Administration has provided benefits to the children of deceased, disabled,
+						and
+						retired Social Security beneficiaries until those children are 18.</li>
+					<li>Using difference-in-differences analysis, we find that the availability of $1000 of grant
+						(normalized to $2856) increases college attendance by 0.167 years and the probability of
+						attending
+						by 3.8%.</li>
+				</ul>
+
+
+
+
+			</article>
+
+			<!-- PhD Thesis -->
+			<article id="phd">
+				<h2 class="major">PhD Thesis</h2>
+				<h4>Affirmative Action in Two Dimensions: A Multi-Period Apportionment Problem</h4>
+				<p>For more details on the content of the project,
+					see my <a href="https://arxiv.org/abs/2111.11963">paper</a>.
+					Code and data associated with this paper are available on my <a
+						href="https://github.com/haydarevren/aa2d">github page</a>. </p>
+
+				<hr>
+				<p>
+
+				<p>This project develops an applied algorithm using statistics and graph theory to improve social and
+					economic impact.
+					Court's objections and public protests in India inspired us to formalize an affirmation action
+					issue. We document merit in debated proposals but also faults. We present an alternative solution
+					and measure the impact by running
+					simulations on 12k jobs. The result of the empirical case study is shown below. </p>
+
+				<span><img src="images/thesis.jpg" alt="Biases" width="100%" /></span>
+
+
+				<p style="font-family:'Lucida Console', monospace"> Abstract: In many settings affirmative action
+					policies apply at two levels simultaneously, for
+					instance, at university as well as at its departments. We show that commonly used methods in
+					reserving positions for beneficiaries of affirmative action are often inadequate in such settings.
+					We present a comprehensive evaluation of existing procedures to formally document their
+					shortcomings. We propose a new solution with appealing theoretical properties and quantify the
+					benefits of adopting it using recruitment advertisement data from India. </p>
+
+				<p>The solution is built around a network flow algorithm that takes a flow network as input
+					and randomly constructs another flow network with fewer fractional flows as its output. By iterative
+					application of this algorithm,
+					a flow network with integral flows is generated.</p>
+
+				<span><img src="images/thesis2.jpg" alt="Biases" width="100%" /></span>
+
+
+			</article>
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; 2021 Haydar Evren. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+
+		</footer>
+	</div>
+	<!-- BG -->
+	<div id="bg" class="bg1"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
