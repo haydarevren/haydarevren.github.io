@@ -1,2 +1,2 @@
 # Personal Website
-https://haydarevren.github.io/
+https://haydarevren.com
