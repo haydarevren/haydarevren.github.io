@@ -122,10 +122,18 @@ html {
     font-size: 16pt;
 }
 
+p {
+    font-size: 14pt;
+}
+
 @media screen and (max-width: 1680px) {
 
     html {
 	font-size: 12pt;
+    }
+
+    p {
+        font-size: 13pt;
     }
 
 }
@@ -136,12 +144,20 @@ html {
 	font-size: 11pt;
     }
 
+    p {
+        font-size: 12pt;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
 
     html {
 	font-size: 10pt;
+    }
+
+    p {
+        font-size: 10pt;
     }
 
 }
