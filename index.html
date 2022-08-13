@@ -96,8 +96,20 @@
 			<!-- Resume -->
 			<article id="resume">
 				<h2 class="major">Resume</h2>
-				<iframe class="center" src="files/EVREN_Resume_brief.pdf"
-					style="position: relative; height: 1000px; width: 100%;" frameBorder="0" scrolling="auto"></iframe>
+				<div id="adobe-dc-view" style="position: relative; height: 950px; width: 100%;"></div>
+				<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+				<script type="text/javascript">
+					document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+						var adobeDCView = new AdobeDC.View({clientId: "<abf2143eb1ab4936a07c629b887455ce>", divId: "adobe-dc-view"});
+						adobeDCView.previewFile({
+							content:{location: {url: "files/EVREN_Resume_brief.pdf"}},
+							metaData:{fileName: "Haydar Evren - Resume.pdf"}
+						}, {embedMode: "SIZED_CONTAINER", showPrintPDF: false, showFullScreen: false});
+					});
+				</script>
+<!-- 
+				<iframe class="center" src="files/EVREN_Resume_brief.pdf#zoom=FitW&toolbar=0"
+					style="position: relative; height: 950px; width: 100%;" frameBorder="0" scrolling="auto"></iframe> -->
 
 			</article>
 
